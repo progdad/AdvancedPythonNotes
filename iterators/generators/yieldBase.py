@@ -1,6 +1,5 @@
 def gensquares(n):
-    for x in range(n):
-        yield x ** 2
+    yield from (x ** 2 for x in range(n))
 
 
 for i in gensquares(10):
