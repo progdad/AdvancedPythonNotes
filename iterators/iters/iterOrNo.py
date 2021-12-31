@@ -13,5 +13,21 @@ print(file.__next__())
 print(file.__next__())
 
 
-lst = [n**2 for n in range(5)]  # list is not iterator as dict and tuple;
+lst = [n**2 for n in range(5)]  # list is not an iterator and dict and tuple as well
 print(lst is iter(lst))  # False
+
+
+import os
+allDocsDirs = os.walk("../")
+print(allDocsDirs)  # <generator object _walk at 0x7fb5eaa0fc10>
+print(allDocsDirs is iter(allDocsDirs))  # True
+print(allDocsDirs.__next__())  # ('../', ['iters', 'generators'], [])
+# Generators also can be opened by a "star"
+print(*(dr[0] for dr in allDocsDirs))  # ../iters ../generators
+
+while True:
+    try:
+        print(allDocsDirs.__next__())
+    except StopIteration:
+        print("Only once !")
+        break
