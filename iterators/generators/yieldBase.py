@@ -7,8 +7,7 @@ for i in gensquares(10):
 
 
 iteratorForSure = gensquares(10)
-
-print(gensquares)  # <function gensquares at 0x7ff4f5cc3ee0> 
+print(gensquares)  # <function gensquares at 0x7ff4f5cc3ee0>
 print(iteratorForSure)  # <generator object gensquares at 0x7ff2ce0dec10>
 print(iteratorForSure is iter(iteratorForSure))  # True
 
