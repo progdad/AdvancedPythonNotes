@@ -14,6 +14,10 @@ class IndexerAndSetter:
 
 
 child = IndexerAndSetter(1, 3, 4, 5, 7)
+
+# __setitem__
 child[4] = 10
 print(child.data)  # [1, 3, 4, 5, 10]
+
+# __index__
 print([i*2 for i in range(1000)][child])  # 510
