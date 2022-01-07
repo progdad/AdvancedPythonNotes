@@ -10,6 +10,7 @@ class IndexerAndSetter:
         __index__ is absolutely not related with indexing,
         it just adds the possibility to use IndexerAndSetter as an index in list indexing.
         """
+
         return 255
 
 
