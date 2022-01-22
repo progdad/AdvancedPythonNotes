@@ -1,10 +1,12 @@
 class StepperIndex:
+    def __init__(self):
+        self.data = "Spam"
+
     def __getitem__(self, i):
         return self.data[i]
 
 
 ohmy = StepperIndex()
-ohmy.data = "Spam"
 
 for item in ohmy:
     print(item, end=' ')  # S p a m
