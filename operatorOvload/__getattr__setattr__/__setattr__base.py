@@ -21,6 +21,7 @@ class Avanger:
 blackwidow = Avanger()
 blackwidow.name, blackwidow.surname = "Natasha", "Romanoff"
 blackwidow.gender = "Woman"
-print(blackwidow.__dict__)
+print(blackwidow.__dict__)  # {'age': 27, 'name': 'Natasha', 'surname': 'Romanoff', 'gender': 'Woman'}
 
-blackwidow.status = "Dead :("
+
+blackwidow.status = "Dead :("  # PermissionError: no permissions to add 'status' attribute
