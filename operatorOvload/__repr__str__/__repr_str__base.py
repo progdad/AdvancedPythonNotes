@@ -5,8 +5,8 @@ class ReprStr:
     Also, they both must return a string
     """
 
-    #def __repr__(self):
-    #    return "ReprStr from __repr__"
+    def __repr__(self):
+        return "ReprStr from __repr__"
 
     def __str__(self):
         return "Hi, I'm __str__"
