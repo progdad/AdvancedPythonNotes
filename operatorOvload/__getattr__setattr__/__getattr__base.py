@@ -4,7 +4,7 @@ class Nothing:
     def __getattr__(self, attrname):
         """
             __getattr__ is not called when attribute is somewhere in class tree.
-            It calls out only when there is no such attribute name in the tree
+            It calls out only when there is no such attribute name in the class tree
         """
         if attrname == "age":
             return "In this case, code will never be here"
