@@ -8,4 +8,5 @@ class ForAPI:
 
 
 callableCls = ForAPI()
-print(callableCls('Arguments', 1, 2, 3, ddd=222, soup="Beautifulsoup"))  # ('Called: ', ('Arguments', 1, 2, 3), {'ddd': 222, 'soup': 'Beautifulsoup'})
+print(callableCls('Arguments', 1, 2, 3, ddd=222, soup="Beautifulsoup"))
+# ('Called: ', ('Arguments', 1, 2, 3), {'ddd': 222, 'soup': 'Beautifulsoup'})
