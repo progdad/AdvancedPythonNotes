@@ -1,4 +1,7 @@
-import sys, os, time, _thread as thread
+import sys
+import os
+import time
+import _thread as thread
 from socket import *
 
 blksz = 1024
@@ -49,10 +52,11 @@ def serverthread(clientsock):
     try:
         file = open(filename, 'rb')
         while True:
-            bytes = file.read(blksz)
-            if not bytes: break
-            sent = clientsock.send(bytes)
-            assert sent == len(bytes)
+            byts = file.read(blksz)
+            if not bytes:
+                break
+            sent = clientsock.send(byts)
+            assert sent == len(byts)
     except Exception:
         print('Error downloading file on server:', filename)
     clientsock.close()
@@ -71,6 +75,7 @@ def server(host, port):
 def main(args):
     host = args.get('-host', defaultHost)
     port = int(args.get('-port', defaultPort))
+
     if args.get('-mode') == 'server':
         if host == 'localhost':
             host = ''
@@ -82,5 +87,5 @@ def main(args):
 
 
 if __name__ == '__main__':
-    args = parsecommandline()
-    main(args)
+    sysargs = parsecommandline()
+    main(sysargs)
