@@ -34,7 +34,7 @@ def client(host, port, filename):
     sock.connect((host, port))
     sock.send((filename + '\n').encode())
     dropdir = os.path.split(filename)[1]
-    file = open(dropdir, 'wb')
+    file = open(f"saveFilesDir/{dropdir}", 'wb')
     while True:
         data = sock.recv(blksz)
         if not data:
@@ -53,7 +53,7 @@ def serverthread(clientsock):
         file = open(filename, 'rb')
         while True:
             byts = file.read(blksz)
-            if not bytes:
+            if not byts:
                 break
             sent = clientsock.send(byts)
             assert sent == len(byts)
