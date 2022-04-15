@@ -12,13 +12,16 @@ class FakeDatabase:
     def locked_update(self, name):
         logging.info("Thread %s: starting update", name)
         logging.debug("Thread %s about to lock", name)
+        # We can use either "with" context manager or chord of .acquire() and .release() methods
+        # self._lock.acquire()
         with self._lock:
             logging.debug("Thread %s has lock", name)
             local_copy = self.value
             local_copy += 1
             time.sleep(0.1)
             self.value = local_copy
-            logging.debug("Thread %s about to release lock", name)
+        # self._lock.release()
+        logging.debug("Thread %s about to release lock", name)
         logging.debug("Thread %s after release", name)
         logging.info("Thread %s: finishing update", name)
 
@@ -50,4 +53,3 @@ if __name__ == '__main__':
         # 17:57:15: Thread 1 after release
         # 17:57:15: Thread 1: finishing update
         # 17:57:15: Testing update. Ending value is 2.
-    

@@ -35,7 +35,7 @@ if __name__ == '__main__':
     threading_method()
     no_join_method()
 
-    # Example OUTPUT(it's always different):
+    # Example OUTPUT:
         # 15:44:15: Thread (0, 1): starting
         # 15:44:15: Thread (1, 1): starting
         # 15:44:15: Thread (2, 1): starting

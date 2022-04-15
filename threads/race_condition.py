@@ -35,4 +35,4 @@ if __name__ == "__main__":
         # 15:59:37: Thread 1: finishing update
         # 15:59:37: Testing update. Ending value is 1.
 
-# The solution of how to make the code work is in "lock_synchronization.py" file
+# The solution of how to make the code work without a race condition is in "lock_synchronization.py" file
