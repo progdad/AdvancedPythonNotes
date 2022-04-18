@@ -28,11 +28,11 @@ if __name__ == "__main__":
     logging.info("Testing update. Ending value is %d.", database.value)
 
     # The OUTPUT:d
-        # 15:59:36: Testing update. Starting value is 0.
-        # 15:59:36: Thread 0: starting update
-        # 15:59:36: Thread 1: starting update
-        # 15:59:37: Thread 0: finishing update
-        # 15:59:37: Thread 1: finishing update
-        # 15:59:37: Testing update. Ending value is 1.
+    # 15:59:36: Testing update. Starting value is 0.
+    # 15:59:36: Thread 0: starting update
+    # 15:59:36: Thread 1: starting update
+    # 15:59:37: Thread 0: finishing update
+    # 15:59:37: Thread 1: finishing update
+    # 15:59:37: Testing update. Ending value is 1.
 
 # The solution of how to make the code work without a race condition is in "4_lock_synchronization.py" file

@@ -62,61 +62,61 @@ if __name__ == "__main__":
         executor.submit(consumer, pipeline)
 
     # The OUTPUT:
-        # 21:06:11: Producer got message: 74
-        # 21:06:11: Producer:about to acquire setlock
-        # 21:06:11: Producer:have setlock
-        # 21:06:11: Producer:about to release getlock
-        # 21:06:11: Producer:getlock released
-        # 21:06:11: Producer got message: 97
-        # 21:06:11: Producer:about to acquire setlock
-        # 21:06:11: Consumer:about to acquire getlock
-        # 21:06:11: Consumer:have getlock
-        # 21:06:11: Consumer:about to release setlock
-        # 21:06:11: Consumer:setlock released
-        # 21:06:11: Consumer storing message: 74
-        # 21:06:11: Consumer:about to acquire getlock
-        # 21:06:11: Producer:have setlock
-        # 21:06:11: Producer:about to release getlock
-        # 21:06:11: Producer:getlock released
-        # 21:06:11: Producer got message: 22
-        # 21:06:11: Producer:about to acquire setlock
-        # 21:06:11: Consumer:have getlock
-        # 21:06:11: Consumer:about to release setlock
-        # 21:06:11: Consumer:setlock released
-        # 21:06:11: Consumer storing message: 97
-        # 21:06:11: Consumer:about to acquire getlock
-        # 21:06:11: Producer:have setlock
-        # 21:06:11: Producer:about to release getlock
-        # 21:06:11: Producer:getlock released
-        # 21:06:11: Producer got message: 58
-        # 21:06:11: Producer:about to acquire setlock
-        # 21:06:11: Consumer:have getlock
-        # 21:06:11: Consumer:about to release setlock
-        # 21:06:11: Consumer:setlock released
-        # 21:06:11: Consumer storing message: 22
-        # 21:06:11: Consumer:about to acquire getlock
-        # 21:06:11: Producer:have setlock
-        # 21:06:11: Producer:about to release getlock
-        # 21:06:11: Producer:getlock released
-        # 21:06:11: Producer got message: 15
-        # 21:06:11: Producer:about to acquire setlock
-        # 21:06:11: Consumer:have getlock
-        # 21:06:11: Consumer:about to release setlock
-        # 21:06:11: Consumer:setlock released
-        # 21:06:11: Consumer storing message: 58
-        # 21:06:11: Consumer:about to acquire getlock
-        # 21:06:11: Producer:have setlock
-        # 21:06:11: Producer:about to release getlock
-        # 21:06:11: Producer:getlock released
-        # 21:06:11: Producer:about to acquire setlock
-        # 21:06:11: Consumer:have getlock
-        # 21:06:11: Consumer:about to release setlock
-        # 21:06:11: Consumer:setlock released
-        # 21:06:11: Consumer storing message: 15
-        # 21:06:11: Consumer:about to acquire getlock
-        # 21:06:11: Producer:have setlock
-        # 21:06:11: Producer:about to release getlock
-        # 21:06:11: Producer:getlock released
-        # 21:06:11: Consumer:have getlock
-        # 21:06:11: Consumer:about to release setlock
-        # 21:06:11: Consumer:setlock released
+    # 21:06:11: Producer got message: 74
+    # 21:06:11: Producer:about to acquire setlock
+    # 21:06:11: Producer:have setlock
+    # 21:06:11: Producer:about to release getlock
+    # 21:06:11: Producer:getlock released
+    # 21:06:11: Producer got message: 97
+    # 21:06:11: Producer:about to acquire setlock
+    # 21:06:11: Consumer:about to acquire getlock
+    # 21:06:11: Consumer:have getlock
+    # 21:06:11: Consumer:about to release setlock
+    # 21:06:11: Consumer:setlock released
+    # 21:06:11: Consumer storing message: 74
+    # 21:06:11: Consumer:about to acquire getlock
+    # 21:06:11: Producer:have setlock
+    # 21:06:11: Producer:about to release getlock
+    # 21:06:11: Producer:getlock released
+    # 21:06:11: Producer got message: 22
+    # 21:06:11: Producer:about to acquire setlock
+    # 21:06:11: Consumer:have getlock
+    # 21:06:11: Consumer:about to release setlock
+    # 21:06:11: Consumer:setlock released
+    # 21:06:11: Consumer storing message: 97
+    # 21:06:11: Consumer:about to acquire getlock
+    # 21:06:11: Producer:have setlock
+    # 21:06:11: Producer:about to release getlock
+    # 21:06:11: Producer:getlock released
+    # 21:06:11: Producer got message: 58
+    # 21:06:11: Producer:about to acquire setlock
+    # 21:06:11: Consumer:have getlock
+    # 21:06:11: Consumer:about to release setlock
+    # 21:06:11: Consumer:setlock released
+    # 21:06:11: Consumer storing message: 22
+    # 21:06:11: Consumer:about to acquire getlock
+    # 21:06:11: Producer:have setlock
+    # 21:06:11: Producer:about to release getlock
+    # 21:06:11: Producer:getlock released
+    # 21:06:11: Producer got message: 15
+    # 21:06:11: Producer:about to acquire setlock
+    # 21:06:11: Consumer:have getlock
+    # 21:06:11: Consumer:about to release setlock
+    # 21:06:11: Consumer:setlock released
+    # 21:06:11: Consumer storing message: 58
+    # 21:06:11: Consumer:about to acquire getlock
+    # 21:06:11: Producer:have setlock
+    # 21:06:11: Producer:about to release getlock
+    # 21:06:11: Producer:getlock released
+    # 21:06:11: Producer:about to acquire setlock
+    # 21:06:11: Consumer:have getlock
+    # 21:06:11: Consumer:about to release setlock
+    # 21:06:11: Consumer:setlock released
+    # 21:06:11: Consumer storing message: 15
+    # 21:06:11: Consumer:about to acquire getlock
+    # 21:06:11: Producer:have setlock
+    # 21:06:11: Producer:about to release getlock
+    # 21:06:11: Producer:getlock released
+    # 21:06:11: Consumer:have getlock
+    # 21:06:11: Consumer:about to release setlock
+    # 21:06:11: Consumer:setlock released

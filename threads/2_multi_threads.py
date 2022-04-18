@@ -36,33 +36,33 @@ if __name__ == '__main__':
     no_join_method()
 
     # Example OUTPUT:
-        # 15:44:15: Thread (0, 1): starting
-        # 15:44:15: Thread (1, 1): starting
-        # 15:44:15: Thread (2, 1): starting
-        # 15:44:15: Thread (3, 1): starting
-        # 15:44:15: Thread (4, 1): starting
-        # 15:44:17: Thread (4, 1): middle
-        # 15:44:17: Thread (2, 1): middle
-        # 15:44:17: Thread (3, 1): middle
-        # 15:44:17: Thread (0, 1): middle
-        # 15:44:17: Thread (1, 1): middle
-        # 15:44:18: Thread (4, 1): finishing
-        # 15:44:18: Thread (0, 1): finishing
-        # 15:44:18: Thread (3, 1): finishing
-        # 15:44:18: Thread (1, 1): finishing
-        # 15:44:18: Thread (2, 1): finishing
-        # 15:44:18: Thread 0: starting
-        # 15:44:18: Thread 1: starting
-        # 15:44:18: Thread 2: starting
-        # 15:44:18: Thread 3: starting
-        # 15:44:18: Thread 4: starting
-        # 15:44:20: Thread 0: middle
-        # 15:44:20: Thread 1: middle
-        # 15:44:20: Thread 3: middle
-        # 15:44:20: Thread 2: middle
-        # 15:44:20: Thread 4: middle
-        # 15:44:21: Thread 0: finishing
-        # 15:44:21: Thread 1: finishing
-        # 15:44:21: Thread 3: finishing
-        # 15:44:21: Thread 2: finishing
-        # 15:44:21: Thread 4: finishing
+    # 15:44:15: Thread (0, 1): starting
+    # 15:44:15: Thread (1, 1): starting
+    # 15:44:15: Thread (2, 1): starting
+    # 15:44:15: Thread (3, 1): starting
+    # 15:44:15: Thread (4, 1): starting
+    # 15:44:17: Thread (4, 1): middle
+    # 15:44:17: Thread (2, 1): middle
+    # 15:44:17: Thread (3, 1): middle
+    # 15:44:17: Thread (0, 1): middle
+    # 15:44:17: Thread (1, 1): middle
+    # 15:44:18: Thread (4, 1): finishing
+    # 15:44:18: Thread (0, 1): finishing
+    # 15:44:18: Thread (3, 1): finishing
+    # 15:44:18: Thread (1, 1): finishing
+    # 15:44:18: Thread (2, 1): finishing
+    # 15:44:18: Thread 0: starting
+    # 15:44:18: Thread 1: starting
+    # 15:44:18: Thread 2: starting
+    # 15:44:18: Thread 3: starting
+    # 15:44:18: Thread 4: starting
+    # 15:44:20: Thread 0: middle
+    # 15:44:20: Thread 1: middle
+    # 15:44:20: Thread 3: middle
+    # 15:44:20: Thread 2: middle
+    # 15:44:20: Thread 4: middle
+    # 15:44:21: Thread 0: finishing
+    # 15:44:21: Thread 1: finishing
+    # 15:44:21: Thread 3: finishing
+    # 15:44:21: Thread 2: finishing
+    # 15:44:21: Thread 4: finishing

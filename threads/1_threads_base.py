@@ -46,6 +46,3 @@ if __name__ == "__main__":
     # 18:36:22: Thread 1: starting
     # 18:36:22: Main : wait for the thread to finish
     # 18:36:22: Main : all done
-
-
-# The explanation of the code are here >>> https://realpython.com/intro-to-python-threading/

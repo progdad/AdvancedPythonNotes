@@ -38,18 +38,19 @@ if __name__ == '__main__':
     logging.info("Testing update. Ending value is %d.", database.value)
 
     # Now there is no race condition anymore
+
     # The OUTPUT:
-        # 17:57:15: Testing update. Starting value is 0.
-        # 17:57:15: Thread 0: starting update
-        # 17:57:15: Thread 0 about to lock
-        # 17:57:15: Thread 0 has lock
-        # 17:57:15: Thread 1: starting update
-        # 17:57:15: Thread 1 about to lock
-        # 17:57:15: Thread 0 about to release lock
-        # 17:57:15: Thread 0 after release
-        # 17:57:15: Thread 0: finishing update
-        # 17:57:15: Thread 1 has lock
-        # 17:57:15: Thread 1 about to release lock
-        # 17:57:15: Thread 1 after release
-        # 17:57:15: Thread 1: finishing update
-        # 17:57:15: Testing update. Ending value is 2.
+    # 17:57:15: Testing update. Starting value is 0.
+    # 17:57:15: Thread 0: starting update
+    # 17:57:15: Thread 0 about to lock
+    # 17:57:15: Thread 0 has lock
+    # 17:57:15: Thread 1: starting update
+    # 17:57:15: Thread 1 about to lock
+    # 17:57:15: Thread 0 about to release lock
+    # 17:57:15: Thread 0 after release
+    # 17:57:15: Thread 0: finishing update
+    # 17:57:15: Thread 1 has lock
+    # 17:57:15: Thread 1 about to release lock
+    # 17:57:15: Thread 1 after release
+    # 17:57:15: Thread 1: finishing update
+    # 17:57:15: Testing update. Ending value is 2.
