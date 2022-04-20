@@ -18,7 +18,7 @@ class Directory:
 
 
 dir1 = Directory("../../")
-dir2 = Directory("../../operatorOvload")
+dir2 = Directory("../../operatorsOverload")
 print(dir1.size)  # 5
 print(dir2.size)  # 10
 
