@@ -1,5 +1,4 @@
-# All the examples of descriptors are taken from the official python documentation https://docs.python.org/3/howto/descriptor.html
-
+# https://docs.python.org/3/howto/descriptor.html#simple-example-a-descriptor-that-returns-a-constant
 
 class Descriptor:
     """
