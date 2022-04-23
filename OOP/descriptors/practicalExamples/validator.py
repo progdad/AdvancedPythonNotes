@@ -6,7 +6,7 @@ from abc import ABC, abstractmethod
 
 class Validator(ABC):
 
-    # Read about abstract classes and methods in "OOP/abstractClass/chess.py" file
+    # Read about abstract classes and methods in "NotesAdvancedPython/abstractClass/chess.py" file
 
     def __set_name__(self, owner, name):
         self.private_name = '_' + name
