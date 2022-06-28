@@ -12,9 +12,12 @@ text2_1 = "(Several (parentheses) are out there. (Is that good), how do u think 
 match2_1_1 = re.findall(r"\(.+\)", text2_1)  # ['(Several (parentheses) out there. (Is that good), how do u think ?)']
 match2_1_2 = re.findall(r"\(.+?\)", text2_1)  # ['(Several (parentheses)', '(Is that good)']
 
-text2_2 = "Google Gooogle Goooooogle"
-match2_2_1 = re.findall(r"o{2,5}", text2_2)  # ['oo', 'ooo', 'ooooo']
-match2_2_2 = re.findall(r"o{2,5}?", text2_2)  # ['oo', 'oo', 'oo', 'oo', 'oo']
+text2_2 = "<div>HTML block <img src='image.jpg'> with two images. <img></div>"
+match2_2_1 = re.findall(r"<img.*>", text2_2)  # ["<img src='image.jpg'> with two images. <img></div>"]
+match2_2_2 = re.findall(r"<img.*?>", text2_2)  # ["<img src='image.jpg'>", '<img>']
+
+# The complete regex to find the valid "<img ...>" tag
+find_img_tag = re.findall(r"<img\s+[^>]*?src\s*=\s*['\"][^>]*?[\"'].*?>", text2_2)  # ["<img src='image.jpg'>"]
 ###
 
 # *, +, ?
