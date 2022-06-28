@@ -1,7 +1,9 @@
 ___
 ___
 ___
+
 # Literals and symbol classes
+
 ___
 
 ### `[abc]`
@@ -57,8 +59,8 @@ ___
 
 ___
 
-### `x{n, m}`
-###### `x{n, m}` - Letter *x* is repeated from *n* to *m* times in a row.
+### `x{n,m}`
+###### `x{n,m}` - Letter *x* is repeated from *n* to *m* times in a row.
 
 __
 
@@ -76,11 +78,11 @@ __
 ###### Letter *x* is repeated not more than *m* times.
 ___
 
-###There are two types of quantifiers: greedy and lazy.
+### There are two types of quantifiers: greedy and lazy.
 - **Greedy ones are the quantifiers, that embrace everything till the end of a string.**
 - **Lazy ones are opposite. These quantifiers embrace the least quantity of symbols. <br>
 To make a quantifier lazy, use `?` in the end of a quantifier: <br>
-`x{n, m}?`**
+`x{n,m}?`**
 
 ___
 
@@ -97,4 +99,36 @@ ___
 ### ?
 ###### The same as `{0,1}`
 
+<br>
+
 ___
+___
+___
+
+# Grouping
+
+___
+
+### Groups are defined by putting expressions in the round brackets
+
+__
+
+
+### There are two types of groups: capturing and non-capturing.
+- **Capturing ones are the groups, that save a content of a group. <br> The syntax is: `(capturing|group)`**
+- **Non-capturing are opposite, they simply don't save a content of a group. <br> The syntax is: `(?:non|capturing|group)`**
+
+___
+
+### Each group has its own identifier. 
+#### By default, the ids are assigned one by one from "1" to the last group number.
+#### That is made so we could use the same group as many times as we need, having the same value, that is inside a group we're reusing.
+- For example `"(word1|word2)something\1"` is not the same as `"(word1|word2)something(word1|word2)"`. <br>
+In the first case the value of the group is copied after "***something***", so if the value is equal to 
+"***word1***" before "***something***", then it will be also "***word1***" after. In the second case, the values before and after "***something***" can be different.
+
+___
+
+### Set ID to a group
+#### To define a custom id, write: `(?P<name>word1|word2)`
+#### To reuse this group, write: `(?P=name)`
