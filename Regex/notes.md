@@ -2,52 +2,52 @@ ___
 ___
 ___
 
-# Literals and symbol classes
+# 1. Literals and symbol classes
 
 ___
 
 ### `[abc]`
-###### Returns only one symbol: "a", "b" or "c".
+###### Matches any symbol: "a", "b" or "c".
 
 __
 
 ### `[^abc]`
-###### Matches any symbol but not "a", "b" or "c".
+###### Any symbol but not "a", "b" or "c".
 
 ___
 
 ### `.`
-###### Matches any symbol, but not *"\n"*. To include *"\n"*, use `re.DOTALL`.
+###### Any symbol, but not *"\n"*. To include *"\n"*, use `re.DOTALL`.
 
 ___
 
 ### `\d`  
-###### Matches any digit(in unicode). if `re.ASCII` is set then only to `[0-9]`.
+###### Any digit(in unicode). if `re.ASCII` is set then nothing but: `[0-9]`.
 
-__
+__expression is found
 
 ### `\D`
-###### Matches any symbol, but a digit(in unicode). if `re.ASCII` is set then only to `[^0-9]`.
+###### Any symbol, but a digit(in unicode). if `re.ASCII` is set, then anything but:`[^0-9]`.
 
 ___
 
 ### `\s`
-###### Matches any space(in unicode). If `re.ASCII` is set, then only to `[ \t\n\r\f\v]`.
+###### Any space(in unicode). If `re.ASCII` is set, then only to `[ \t\n\r\f\v]`.
 
 __
 
 ### `\S`
-###### Matches any symbol, but a space(in unicode). If `re.ASCII` is set, then only to `[^ \t\n\r\f\v]`.
+###### Any symbol, but a space(in unicode). If `re.ASCII` is set, then anything but: `[^ \t\n\r\f\v]`.
 
 ___
 
 ### `\w` 
-###### Matches any word symbol: `[a-zA-Z0-9_а-явА-Я]`, etc. If `re.ASCII` is set, then only to `[a-zA-Z0-9_]`.
+###### Any word symbol: `[a-zA-Z0-9_а-явА-Я]`, etc. If `re.ASCII` is set, then only to `[a-zA-Z0-9_]`.
 
 __
 
 ### `\W`
-###### Matches any symbol, but a word symbol: `[a-zA-Z0-9_а-явА-Я]`, etc. If `re.ASCII` is set, then only to `[^a-zA-Z0-9_]`.
+###### Any symbol, but a word symbol from: `[a-zA-Z0-9_а-явА-Я]`, etc. If `re.ASCII` is set, then anything, but: `[^a-zA-Z0-9_]`.
 
 <br>
 
@@ -55,7 +55,7 @@ ___
 ___
 ___
 
-# Quantifiers
+# 2. Quantifiers
 
 ___
 
@@ -105,7 +105,7 @@ ___
 ___
 ___
 
-# Grouping
+# 3. Grouping
 
 ___
 
@@ -132,3 +132,84 @@ ___
 ### Set ID to a group
 #### To define a custom id, write: `(?P<name>word1|word2)`
 #### To reuse this group, write: `(?P=name)`
+
+<br>
+
+___
+___
+___
+
+## 4.1. Flags
+
+___
+
+### `^`
+###### The beginning of the whole text. If `re.MULTILINE` is set, then matches to the beginning of a new line.
+
+___
+
+### `$`
+###### The end of the whole text. If `re.MULTILINE` is set, then matches to the position before `*\n*` symbol.
+
+___
+
+### `\A`
+###### The beginning of the whole text.
+
+___
+
+### `\b`
+###### The verge of a word.
+
+___
+
+### `\B`
+###### The verge of NOT a word.
+
+___
+
+### `\Z`
+###### The end of the whole text.
+
+___
+
+### `(?flags)`
+###### `flags` - one ore more flags:
+- `a` == `re.ASCII`
+- `i` == `re.IGNORECASE`
+- `m` == `re.MULTILINE`
+- `s` == `re.DOTALL`
+- `x` == `re.VERBOSE`
+
+###
+
+___
+___
+
+## 4.2 Checks
+
+____
+
+### Look ahead positive `X(?=Y)`
+###### Match `X` if `Y` is after `X`.
+
+__
+
+### Look ahead negative  `X(?!Y)`
+###### Match `X` if `Y` is NOT after `X`
+
+___
+
+### Look behind positive `(?<=Y)X`
+###### Match `X` if `Y` is before `X`.
+
+__
+
+### Look behind negative `(?<!Y)X`
+###### Match `X` if `Y` is NOT before `X`
+
+<br>
+
+___
+___
+___
