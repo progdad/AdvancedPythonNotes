@@ -3,7 +3,7 @@ import re
 
 text = "color: #000; font-size: 30px; background: #FA43E9;"
 
-# "re.search" method saves only first match.
+# "re.search(pattern, string, flags)" method saves only first match.
 match1 = re.search(r"\b([\w-]+)\s*:\s*(#[0-9a-zA-Z]{3,6});", text)
 print(match1.groups())  # ('color', '#000')
 print(match1.group(0))  # color: #000;
@@ -24,7 +24,7 @@ print(match2.lastgroup)  # value
 print(match2.expand(r"Style '\g<style>' has value '\g<value>'"))  # Style 'color' has value '#000'
 #####
 
-# "re.finditer" is an iterator, that saves all the matches. 
+# "re.finditer(pattern, string, flags)" is an iterator, that saves all the matches.
 # And for each object in the iterator we can use the same methods as we used with "re.search"
 matches = re.finditer(r"\b(?P<style>[\w-]+)\s*:\s*(?P<value>#[0-9a-zA-Z]{3,6});", text)
 print(matches, iter(matches) is matches)  # <callable_iterator object at 0x7fc93b56b6a0> True
